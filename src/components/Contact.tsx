@@ -42,7 +42,7 @@ export default function Contact() {
               Vamos Criar <span className="italic text-accent font-light">História</span>.
             </h2>
             <p className="text-secondary/60 text-lg mb-12 max-w-md mx-auto">
-              Quer esteja a organizar uma cimeira em Lisboa ou um casamento em Paris, entre em contacto para discutirmos a sua visão.
+              Entre em contacto com o MC LORD KELVIN II.
             </p>
 
             <div className="space-y-8 mb-12 flex flex-col items-center">
@@ -52,11 +52,11 @@ export default function Contact() {
                 </div>
                 <span className="text-xl font-light tracking-wide">+258 87 525 6426</span>
               </a>
-              <a href="mailto:klvnmachava10@gmail.com" className="flex items-center gap-4 text-secondary/80 hover:text-accent transition-colors group text-left">
+              <a href="mailto:machava.kelvin.pro27@gmail.com" className="flex items-center gap-4 text-secondary/80 hover:text-accent transition-colors group text-left">
                 <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-accent transition-colors">
                   <Mail className="w-5 h-5" />
                 </div>
-                <span className="text-xl font-light tracking-wide">klvnmachava10@gmail.com</span>
+                <span className="text-xl font-light tracking-wide">machava.kelvin.pro27@gmail.com</span>
               </a>
               <div className="flex items-center gap-4 text-secondary/80 group text-left">
                 <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center">

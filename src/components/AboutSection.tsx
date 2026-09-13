@@ -43,27 +43,35 @@ export default function AboutSection() {
                 Por Detrás do Microfone
               </span>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight">
-                Elevando Eventos Através de uma Comunicação <br />
-                <span className="italic text-accent font-light">Elegante</span>.
+                Sobre o Lord Kelvin II
               </h2>
             </div>
 
             <div className="space-y-6 text-secondary/70 text-lg md:text-xl leading-relaxed font-light">
               <p>
-                Com anos de experiência nos palcos dos mais prestigiados eventos corporativos e privados, a minha missão é garantir que a sua mensagem seja transmitida com absoluta autoridade e elegância.
+                Cada evento conta uma história, e acredito que ela merece ser narrada com excelência.
               </p>
               <p>
-                Um evento é mais do que uma reunião; é uma história meticulosamente construída. Como seu Mestre de Cerimónias, atuo como o fio invisível que une cada momento — garantindo o protocolo perfeito, o tempo impecável e um público envolvido do início ao fim.
+                Sou Lord Kelvin II, Mestre de Cerimónias especializado em conduzir casamentos, noivados, aniversários, bodas, eventos corporativos e outras celebrações com elegância, profissionalismo e autenticidade.
+              </p>
+              <p>
+                O meu compromisso vai além de anunciar momentos. Procuro criar uma atmosfera envolvente, coordenar cada etapa do evento com organização e proporcionar tranquilidade aos anfitriões, para que possam viver o seu dia especial enquanto eu cuido da condução da cerimónia.
+              </p>
+              <p>
+                Com uma comunicação clara, presença marcante e atenção aos detalhes, trabalho para que cada evento seja memorável e reflita a personalidade de quem o celebra.
+              </p>
+              <p className="italic text-accent font-light mt-4">
+                Permita-me narrar a sua história com elegância e profissionalismo.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-8 pt-10 border-t border-white/10">
               <div className="space-y-2">
-                <h3 className="font-display text-5xl text-secondary">10+</h3>
+                <h3 className="font-display text-5xl text-secondary">12+</h3>
                 <p className="text-xs text-secondary/50 uppercase tracking-[0.15em] font-medium">Anos de Experiência</p>
               </div>
               <div className="space-y-2">
-                <h3 className="font-display text-5xl text-secondary">500+</h3>
+                <h3 className="font-display text-5xl text-secondary">520+</h3>
                 <p className="text-xs text-secondary/50 uppercase tracking-[0.15em] font-medium">Eventos Realizados</p>
               </div>
             </div>

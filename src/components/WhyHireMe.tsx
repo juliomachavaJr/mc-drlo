@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { ShieldCheck, Users, Clock, Sparkles, ScrollText, Mic2, Star } from "lucide-react";
 
 const benefits = [
-  { icon: ShieldCheck, title: "Profissionalismo", description: "Dedicação absoluta à imagem da sua marca." },
+  { icon: ShieldCheck, title: "Profissionalismo", description: "Dedicação absoluta à imagem da sua marca / evento." },
   { icon: Users, title: "Envolvimento do Público", description: "Manter todos os convidados cativados e conectados." },
   { icon: Clock, title: "Gestão de Tempo", description: "Execução impecável respeitando cada minuto da agenda." },
-  { icon: Sparkles, title: "Improvisação", description: "Lidar com o inesperado com graça e confiança naturais." },
+  { icon: Sparkles, title: "Improvisação", description: "Lido com o inesperado com humor, optimismo e confiança naturais." },
   { icon: ScrollText, title: "Especialista em Protocolo", description: "Domínio de protocolos diplomáticos, corporativos e sociais." },
   { icon: Mic2, title: "Comunicação Elegante", description: "Uma voz sofisticada que eleva a atmosfera." },
   { icon: Star, title: "Fluidez Impecável", description: "Transições perfeitas entre oradores e momentos." },

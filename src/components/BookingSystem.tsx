@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, Calendar, MapPin, Users, Globe, Clock, Wallet, UploadCloud } from "lucide-react";
 
-const EVENT_TYPES = ["Gala Corporativa", "Conferência / Cimeira", "Cerimónia de Premiação", "Casamento de Luxo", "Evento Governamental", "Outro"];
+const EVENT_TYPES = ["Festa de Aniversário", "Noivado", "Casamento", "Festa de Graduação", "Evento corporativo", "Outros"];
 
 type FormData = {
   eventType: string;

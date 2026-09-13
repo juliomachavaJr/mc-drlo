@@ -11,8 +11,8 @@ export default function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/media/MANICA_367.jpg"
-          alt="Master of Ceremonies on stage"
+          src="/media/capa.png"
+          alt="Lord Kelvin II - Mestre de Cerimónias"
           fill
           priority
           className="object-cover object-center"
@@ -46,12 +46,19 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.0 }}
-          className="font-display text-5xl md:text-7xl lg:text-[90px] font-bold leading-[1.05] max-w-5xl mb-8 text-secondary"
+          className="font-display text-6xl md:text-8xl lg:text-[100px] font-bold leading-[1.05] max-w-5xl mb-4 text-secondary uppercase tracking-widest"
         >
-          A Voz Por Detrás de{" "}
-          <br className="hidden md:block" />
-          Eventos <span className="italic text-accent font-light">Inesquecíveis</span>.
+          LORD KELVIN II
         </motion.h1>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
+          className="text-accent text-xl md:text-3xl font-light italic mb-8 max-w-3xl"
+        >
+          Permita-me narrar a sua história com elegância e profissionalismo.
+        </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +66,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1.2 }}
           className="text-secondary/80 text-lg md:text-xl max-w-2xl mb-14 leading-relaxed font-light"
         >
-          Mestre de Cerimónias Profissional, especializado em eventos corporativos, conferências, casamentos, aniversários e cerimónias de alto perfil.
+          Mestre de cerimónias Profissional, especializado em eventos corporativos, casamentos, noivados, festas de aniversário, graduações e outros eventos de alto perfil.
         </motion.p>
 
         <motion.div
