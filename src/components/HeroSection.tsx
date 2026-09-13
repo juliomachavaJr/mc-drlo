@@ -11,11 +11,11 @@ export default function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/media/capa.png"
+          src="/media/image000005.png"
           alt="Lord Kelvin II - Mestre de Cerimónias"
           fill
           priority
-          className="object-cover object-top"
+          className="object-cover object-center"
           quality={100}
           sizes="100vw"
         />
