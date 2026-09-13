@@ -15,9 +15,9 @@ export default function HeroSection() {
           alt="Lord Kelvin II - Mestre de Cerimónias"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-top"
           quality={100}
-          sizes="50vw"
+          sizes="100vw"
         />
         {/* Multi-layer overlay for depth */}
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/55 to-primary/20" />
