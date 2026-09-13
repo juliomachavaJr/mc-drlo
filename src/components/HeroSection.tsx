@@ -17,7 +17,7 @@ export default function HeroSection() {
           priority
           className="object-cover object-center"
           quality={100}
-          sizes="100vw"
+          sizes="50vw"
         />
         {/* Multi-layer overlay for depth */}
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/55 to-primary/20" />
