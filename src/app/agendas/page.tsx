@@ -185,7 +185,6 @@ export default function AgendasPage() {
               )}
 
             </div>
-            </div>
           </div>
 
         </div>
