@@ -69,11 +69,6 @@ export default function Showreel() {
           transition={{ duration: 0.8 }}
           className="relative z-10 flex flex-col items-center group cursor-pointer"
         >
-          {/* Play Button */}
-          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border border-white/20 bg-primary/20 backdrop-blur-sm flex items-center justify-center mb-8 group-hover:bg-accent group-hover:border-accent transition-all duration-500 hover:scale-110">
-            <Play className="w-10 h-10 md:w-12 md:h-12 text-white ml-2" fill="currentColor" />
-          </div>
-          
           <span className="text-accent uppercase tracking-[0.3em] text-sm font-semibold mb-4">
             Melhores Momentos
           </span>

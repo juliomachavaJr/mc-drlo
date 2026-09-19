@@ -85,22 +85,6 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Additional Services List */}
-        <div className="border-t border-white/10 pt-16">
-          <h3 className="text-secondary/50 uppercase tracking-[0.2em] text-sm font-semibold mb-8 text-center">
-            Capacidades Abrangentes
-          </h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            {additionalServices.map((service, idx) => (
-              <span
-                key={idx}
-                className="px-6 py-3 rounded-full border border-white/10 text-secondary/70 hover:border-accent hover:text-accent transition-colors text-sm uppercase tracking-wider"
-              >
-                {service}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
