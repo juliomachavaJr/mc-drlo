@@ -184,15 +184,7 @@ export default function AgendasPage() {
                 </div>
               )}
 
-              <div className="mt-8 pt-6 border-t border-white/5 text-center">
-                <Link
-                  href="/#booking"
-                  className="group inline-flex items-center gap-2 text-accent text-sm font-semibold uppercase tracking-widest hover:gap-4 transition-all"
-                >
-                  Verificar disponibilidade
-                  <span className="text-lg">→</span>
-                </Link>
-              </div>
+            </div>
             </div>
           </div>
 
