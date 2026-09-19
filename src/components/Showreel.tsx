@@ -59,15 +59,16 @@ export default function Showreel() {
             </motion.div>
           </AnimatePresence>
           <div className="absolute inset-0 bg-primary/40 mix-blend-multiply z-10" />
+          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-primary/90 to-transparent z-10" />
         </div>
 
         {/* Content */}
         <motion.div 
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 flex flex-col items-center group cursor-pointer"
+          className="relative z-20 flex flex-col items-center justify-end h-full pb-20 pointer-events-none"
         >
           <span className="text-accent uppercase tracking-[0.3em] text-sm font-semibold mb-4">
             Melhores Momentos

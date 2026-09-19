@@ -92,16 +92,67 @@ export default function EventoForm() {
         <form onSubmit={handleSubmit} className="space-y-12 bg-[#0a0a0a] p-8 md:p-12 border border-white/5 rounded-sm">
           
           {eventType === "outros" ? (
-            <section className="space-y-6">
-              <h2 className="text-2xl font-bold text-secondary border-b border-white/10 pb-4">Detalhes do Evento</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input label="Tipo de evento" required />
-                <Input label="Nome do Anfitrião" required />
-                <Input label="Local do evento" required />
-                <Input label="Hora do início" type="time" required />
-                <Input label="Hora do fim" type="time" required />
-              </div>
-            </section>
+            <>
+              {/* 1. DADOS DO EVENTO */}
+              <section className="space-y-6">
+                <h2 className="text-2xl font-bold text-secondary border-b border-white/10 pb-4">1. Dados do Evento</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <Input label="Tipo de evento" required />
+                  <Input label="Nome do anfitrião / contratante" required />
+                  <Input label="Telefone / WhatsApp" type="tel" required />
+                  <Input label="Data do evento" type="date" required />
+                  <Input label="Local do evento" required />
+                  <Input label="Cidade" required />
+                  <Input label="Número estimado de convidados" />
+                </div>
+              </section>
+
+              {/* 2. HORÁRIO */}
+              <section className="space-y-6">
+                <h2 className="text-2xl font-bold text-secondary border-b border-white/10 pb-4">2. Horário</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <Input label="Hora prevista para o início" type="time" required />
+                  <Input label="Hora prevista para o término" type="time" required />
+                </div>
+              </section>
+
+              {/* 3. O QUE ESPERA DO MESTRE DE CERIMÓNIAS? */}
+              <section className="space-y-6">
+                <h2 className="text-2xl font-bold text-secondary border-b border-white/10 pb-4">3. O Que Espera do Mestre de Cerimónias?</h2>
+                <div className="space-y-4">
+                  <p className="text-sm font-medium text-secondary/70">Seleccione uma ou mais opções:</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {[
+                      "Condução elegante e protocolar",
+                      "Equilíbrio entre elegância e animação",
+                      "Gestão do programa e transição entre momentos",
+                      "Animação e interacção com os convidados",
+                      "Condução de discursos e momentos especiais",
+                    ].map((opt) => (
+                      <label key={opt} className="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" name="Espera_do_MC" value={opt} className="w-4 h-4 accent-accent bg-transparent border-white/20" />
+                        <span className="text-secondary/70 text-sm">{opt}</span>
+                      </label>
+                    ))}
+                  </div>
+                  <Input label="Outro" />
+                </div>
+              </section>
+
+              {/* 4. MOMENTO ESPECIAL */}
+              <section className="space-y-6">
+                <h2 className="text-2xl font-bold text-secondary border-b border-white/10 pb-4">4. Há Algum Momento Especial Que Gostaria Que O MC Conduzisse?</h2>
+                <p className="text-sm font-medium text-secondary/70">Ex.: entrada dos noivos, discursos, corte do bolo, brinde, brincadeiras, entrega de prémios, abertura da pista, etc.</p>
+                <Textarea label="Momento(s) especial(is) / breve descrição" rows={3} />
+              </section>
+
+              {/* 5. EXPECTATIVA DOS ANFITRIÕES */}
+              <section className="space-y-6">
+                <h2 className="text-2xl font-bold text-secondary border-b border-white/10 pb-4">5. Expectativa dos Anfitriões</h2>
+                <p className="text-sm font-medium text-secondary/70">Em poucas palavras, diga-nos como gostaria que o seu evento fosse conduzido e lembrado.</p>
+                <Textarea label="O que espera do Lord Kelvin II neste evento?" rows={3} />
+              </section>
+            </>
           ) : (
             <>
               {/* 1. DADOS DOS NOIVOS */}

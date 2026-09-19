@@ -10,22 +10,12 @@ export default function HeroSection() {
     <section className="relative w-full h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        {/* Blurred Background Layer to fill the screen */}
-        <Image
-          src="/media/image000005.png"
-          alt="Background"
-          fill
-          className="object-cover object-center opacity-30 blur-2xl scale-110"
-          quality={10}
-          sizes="100vw"
-        />
-        {/* Main Subject Layer (Contained so it's not cropped) */}
         <Image
           src="/media/image000005.png"
           alt="Lord Kelvin II - Mestre de Cerimónias"
           fill
           priority
-          className="object-contain object-bottom"
+          className="object-cover object-[center_15%]"
           quality={100}
           sizes="100vw"
         />

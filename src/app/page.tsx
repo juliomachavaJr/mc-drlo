@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import WhyHireMe from "@/components/WhyHireMe";
 import Services from "@/components/Services";
-import Agenda from "@/components/Agenda";
 import Showreel from "@/components/Showreel";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
@@ -26,22 +25,19 @@ export default function Home() {
       {/* 4. SERVICES */}
       <Services />
 
-      {/* 5. AGENDA */}
-      <Agenda />
-
-      {/* 6. SHOWREEL */}
+      {/* 5. SHOWREEL */}
       <Showreel />
 
-      {/* 7. GALLERY */}
+      {/* 6. GALLERY */}
       <Gallery />
 
-      {/* 8. TESTIMONIALS */}
+      {/* 7. TESTIMONIALS */}
       <Testimonials />
 
-      {/* 9. BOOKING SYSTEM */}
+      {/* 8. BOOKING SYSTEM */}
       <BookingSystem />
 
-      {/* 10. CONTACT */}
+      {/* 9. CONTACT */}
       <Contact />
     </main>
   );
