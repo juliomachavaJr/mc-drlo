@@ -45,6 +45,7 @@ export default function BookingSystem() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: "ec779586-6151-4ec6-92f6-97c0a65b854b",
+          to: "machava.kelvin.pro27@gmail.com",
           subject: "Novo Pedido de Reserva - MC DRLO",
           from_name: `${form.firstName} ${form.lastName}`,
           replyto: form.email,

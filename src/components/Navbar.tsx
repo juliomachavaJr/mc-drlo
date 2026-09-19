@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -17,12 +17,44 @@ const navLinks = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeHash, setActiveHash] = useState("");
+  const [pathname, setPathname] = useState("");
 
   useEffect(() => {
+    setPathname(window.location.pathname);
     const onScroll = () => setIsScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Track hash and pathname changes
+  useEffect(() => {
+    const update = () => {
+      setActiveHash(window.location.hash);
+      setPathname(window.location.pathname);
+    };
+    update();
+    window.addEventListener("hashchange", update);
+    return () => window.removeEventListener("hashchange", update);
+  }, []);
+
+  const isActive = (href: string) => {
+    if (!href.startsWith("/#")) {
+      return pathname === href;
+    }
+    const hash = href.split("#")[1];
+    return pathname === "/" && activeHash === `#${hash}`;
+  };
+
+  const handleClick = (href: string) => {
+    if (href.startsWith("/#")) {
+      setActiveHash(`#${href.split("#")[1]}`);
+      setPathname("/");
+    } else {
+      setActiveHash("");
+      setPathname(href);
+    }
+  };
 
   return (
     <>
@@ -43,19 +75,31 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-10">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="text-xs text-secondary/60 hover:text-secondary uppercase tracking-[0.15em] transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => handleClick(link.href)}
+                  className={`text-xs uppercase tracking-[0.15em] transition-all duration-200 relative ${
+                    active
+                      ? "text-accent font-bold"
+                      : "text-secondary/60 hover:text-secondary font-normal"
+                  }`}
+                >
+                  {link.label}
+                  {active && (
+                    <span className="absolute -bottom-1 left-0 right-0 h-[1px] bg-accent" />
+                  )}
+                </Link>
+              );
+            })}
           </div>
 
           <Link
             href="/#booking"
+            onClick={() => handleClick("/#booking")}
             className="hidden md:inline-flex px-6 py-3 bg-accent text-primary text-xs font-bold uppercase tracking-widest hover:bg-white transition-colors"
           >
             Reservar
@@ -78,19 +122,24 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="fixed inset-0 z-40 bg-primary pt-24 px-8 flex flex-col gap-8"
         >
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="font-display text-4xl text-secondary hover:text-accent transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const active = isActive(link.href);
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                onClick={() => { setMobileOpen(false); handleClick(link.href); }}
+                className={`font-display text-4xl transition-colors ${
+                  active ? "text-accent" : "text-secondary hover:text-accent"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
           <Link
             href="/#booking"
-            onClick={() => setMobileOpen(false)}
+            onClick={() => { setMobileOpen(false); handleClick("/#booking"); }}
             className="mt-8 px-6 py-4 bg-accent text-primary text-sm font-bold uppercase tracking-widest text-center"
           >
             Reservar Evento
@@ -121,6 +170,7 @@ export default function Navbar() {
         >
           <Link
             href="/#booking"
+            onClick={() => handleClick("/#booking")}
             className="px-8 py-3 bg-accent text-primary text-xs font-bold uppercase tracking-widest hover:bg-white transition-colors shadow-2xl"
           >
             Reservar Evento

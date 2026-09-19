@@ -67,11 +67,11 @@ export default function AboutSection() {
 
             <div className="grid grid-cols-2 gap-8 pt-10 border-t border-white/10">
               <div className="space-y-2">
-                <h3 className="font-display text-5xl text-secondary">12+</h3>
+                <h3 className="font-display text-5xl text-secondary">+2</h3>
                 <p className="text-xs text-secondary/50 uppercase tracking-[0.15em] font-medium">Anos de Experiência</p>
               </div>
               <div className="space-y-2">
-                <h3 className="font-display text-5xl text-secondary">520+</h3>
+                <h3 className="font-display text-5xl text-secondary">+20</h3>
                 <p className="text-xs text-secondary/50 uppercase tracking-[0.15em] font-medium">Eventos Realizados</p>
               </div>
             </div>

@@ -13,7 +13,8 @@ export default function EventoForm() {
     setIsSubmitting(true);
     
     const formData = new FormData(e.currentTarget);
-    formData.append("access_key", "ec779586-6151-4ec6-92f6-97c0a65b854b"); // Chave Web3Forms
+    formData.append("access_key", "ec779586-6151-4ec6-92f6-97c0a65b854b");
+    formData.append("to", "machava.kelvin.pro27@gmail.com");
     formData.append("subject", `Novo Briefing Preenchido - MC DRLO (${eventType})`);
     
     try {
