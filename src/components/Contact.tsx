@@ -46,24 +46,30 @@ export default function Contact() {
               Entre em contacto com o MC LORD KELVIN II.
             </p>
 
-            <div className="space-y-8 mb-12 flex flex-col items-center">
-              <a href="tel:+351912345678" className="flex items-center gap-4 text-secondary/80 hover:text-accent transition-colors group text-left">
-                <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-accent transition-colors">
-                  <Phone className="w-5 h-5" />
+            <div className="space-y-6 sm:space-y-8 mb-12 flex flex-col items-center">
+              <a href="tel:+258875256426" className="flex items-center gap-3 sm:gap-4 text-secondary/80 hover:text-accent transition-colors group text-left max-w-full">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-accent transition-colors">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-xl font-light tracking-wide">+258 87 525 6426</span>
+                <span className="text-base sm:text-lg md:text-xl font-light tracking-wide truncate">
+                  +258 87 525 6426
+                </span>
               </a>
-              <a href="mailto:machava.kelvin.pro27@gmail.com" className="flex items-center gap-4 text-secondary/80 hover:text-accent transition-colors group text-left">
-                <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-accent transition-colors">
-                  <Mail className="w-5 h-5" />
+              <a href="mailto:machava.kelvin.pro27@gmail.com" className="flex items-center gap-3 sm:gap-4 text-secondary/80 hover:text-accent transition-colors group text-left max-w-full">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-accent transition-colors">
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-xl font-light tracking-wide">machava.kelvin.pro27@gmail.com</span>
+                <span className="text-sm sm:text-base md:text-xl font-light tracking-wide truncate">
+                  machava.kelvin.pro27@gmail.com
+                </span>
               </a>
-              <div className="flex items-center gap-4 text-secondary/80 group text-left">
-                <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center">
-                  <MapPin className="w-5 h-5" />
+              <div className="flex items-center gap-3 sm:gap-4 text-secondary/80 group text-left max-w-full">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/10 flex items-center justify-center">
+                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-xl font-light tracking-wide">Moçambique- Maputo</span>
+                <span className="text-base sm:text-lg md:text-xl font-light tracking-wide truncate">
+                  Moçambique - Maputo
+                </span>
               </div>
             </div>
 

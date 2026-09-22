@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <section
       id="inicio"
-      className="relative w-full min-h-[960px] lg:min-h-[1020px] flex flex-col justify-end items-center pb-12 sm:pb-16 overflow-hidden bg-[#111111]"
+      className="relative w-full min-h-[100svh] sm:min-h-[960px] lg:min-h-[1020px] flex flex-col justify-end items-center pb-12 sm:pb-16 overflow-hidden bg-[#111111]"
     >
       {/* Background Image Container com máscara radial para fusão perfeita nas bordas */}
       <div 
@@ -45,7 +45,7 @@ export default function HeroSection() {
       />
 
       {/* Hero Content - Positioned generously below chin */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center text-center mt-auto pt-[440px] sm:pt-[480px] md:pt-[520px]">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center text-center mt-auto pt-[45svh] sm:pt-[480px] md:pt-[520px]">
         <motion.span
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
