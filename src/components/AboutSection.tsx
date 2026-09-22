@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-32 bg-primary overflow-hidden">
+    <section id="about" className="w-full py-32 bg-primary overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* Image Column */}

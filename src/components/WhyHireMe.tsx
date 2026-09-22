@@ -30,7 +30,7 @@ const cardVariants = {
 
 export default function WhyHireMe() {
   return (
-    <section className="py-32 bg-[#0a0a0a] border-t border-white/5 relative">
+    <section className="w-full py-32 bg-[#0a0a0a] border-t border-white/5 relative">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
 
       <div className="container mx-auto px-6 lg:px-12">

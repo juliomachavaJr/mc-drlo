@@ -14,7 +14,7 @@ const galleryImages = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="pt-12 pb-32 bg-[#050505]">
+    <section id="gallery" className="w-full pt-12 pb-32 bg-[#050505]">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4 block">
@@ -30,9 +30,9 @@ export default function Gallery() {
           {galleryImages.map((src, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
               className="relative group overflow-hidden rounded-sm cursor-pointer break-inside-avoid"
             >
