@@ -24,7 +24,8 @@ const FacebookIcon = () => (
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 bg-primary border-t border-white/5 relative overflow-hidden">
+    <section id="contacto" className="py-32 bg-primary border-t border-white/5 relative overflow-hidden">
+      <span id="contact" className="absolute top-0 pointer-events-none" />
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
           {/* Contact Information */}

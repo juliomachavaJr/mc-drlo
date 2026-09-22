@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="w-full py-32 bg-primary overflow-hidden">
+    <section id="sobre" className="w-full py-32 bg-primary overflow-hidden relative">
+      <span id="about" className="absolute top-0 pointer-events-none" />
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* Image Column */}
@@ -43,7 +44,7 @@ export default function AboutSection() {
                 Por Detrás do Microfone
               </span>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight">
-                Sobre o Lord Kelvin II
+                Sobre o <span className="italic text-accent font-light">Lord Kelvin II</span>.
               </h2>
             </div>
 
@@ -60,7 +61,7 @@ export default function AboutSection() {
               <p>
                 Com uma comunicação clara, presença marcante e atenção aos detalhes, trabalho para que cada evento seja memorável e reflita a personalidade de quem o celebra.
               </p>
-              <p className="italic text-accent font-light mt-4">
+              <p className="font-display italic text-accent font-light text-xl md:text-2xl mt-4">
                 Permita-me narrar a sua história com elegância e profissionalismo.
               </p>
             </div>

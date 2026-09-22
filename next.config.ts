@@ -16,6 +16,20 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  async redirects() {
+    return [
+      {
+        source: "/agendas",
+        destination: "/#agendas",
+        permanent: true,
+      },
+      {
+        source: "/evento",
+        destination: "/#briefing",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -14,7 +14,8 @@ const galleryImages = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="w-full pt-12 pb-32 bg-[#050505]">
+    <section id="galeria" className="w-full pt-12 pb-32 bg-[#050505] relative">
+      <span id="gallery" className="absolute top-0 pointer-events-none" />
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4 block">

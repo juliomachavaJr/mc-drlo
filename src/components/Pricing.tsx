@@ -80,7 +80,7 @@ export default function Pricing() {
               </ul>
               
               <Link
-                href="#booking"
+                href="#briefing"
                 className={`w-full py-4 text-center text-sm font-bold uppercase tracking-[0.2em] transition-colors ${
                   pkg.highlighted 
                     ? "bg-accent text-primary hover:bg-white" 
@@ -96,7 +96,7 @@ export default function Pricing() {
         <div className="text-center">
           <p className="text-secondary/50 mb-4 font-light">Tem requisitos específicos?</p>
           <Link
-            href="#booking"
+            href="#briefing"
             className="group inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors pb-1 border-b border-transparent hover:border-accent"
           >
             <span className="uppercase tracking-[0.2em] text-sm font-semibold">Pedir Orçamento Personalizado</span>

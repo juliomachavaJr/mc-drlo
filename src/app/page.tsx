@@ -1,13 +1,12 @@
-import Link from "next/link";
-import { Play } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import WhyHireMe from "@/components/WhyHireMe";
 import Services from "@/components/Services";
+import AgendasSection from "@/components/AgendasSection";
+import BriefingSection from "@/components/BriefingSection";
 import Showreel from "@/components/Showreel";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
-import BookingSystem from "@/components/BookingSystem";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -16,28 +15,31 @@ export default function Home() {
       {/* 1. HERO SECTION */}
       <HeroSection />
 
-      {/* 2. ABOUT SECTION */}
+      {/* 2. SOBRE */}
       <AboutSection />
 
-      {/* 3. WHY HIRE ME */}
+      {/* 3. POR QUE CONTRATAR */}
       <WhyHireMe />
 
-      {/* 4. SERVICES */}
+      {/* 4. SERVIÇOS */}
       <Services />
 
-      {/* 5. SHOWREEL */}
+      {/* 5. AGENDAS */}
+      <AgendasSection />
+
+      {/* 6. BRIEFING */}
+      <BriefingSection />
+
+      {/* 7. SHOWREEL */}
       <Showreel />
 
-      {/* 6. GALLERY */}
+      {/* 8. GALERIA */}
       <Gallery />
 
-      {/* 7. TESTIMONIALS */}
+      {/* 9. TESTEMUNHOS */}
       <Testimonials />
 
-      {/* 8. BOOKING SYSTEM */}
-      <BookingSystem />
-
-      {/* 9. CONTACT */}
+      {/* 10. CONTACTO */}
       <Contact />
     </main>
   );
