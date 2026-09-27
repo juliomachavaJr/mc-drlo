@@ -24,9 +24,9 @@ export default function HeroSection() {
           alt="Lord Kelvin II - Mestre de Cerimónias"
           fill
           priority
+          unoptimized
           className="object-cover object-[center_top] translate-y-0"
           quality={100}
-          sizes="100vw"
         />
 
         {/* Gradiente sutil inferior para contraste perfeito dos textos e transição suave */}
