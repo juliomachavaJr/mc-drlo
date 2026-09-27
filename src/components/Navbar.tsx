@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowUp } from "lucide-react";
 
 const navLinks = [
   { label: "Sobre", id: "sobre" },
@@ -195,6 +195,15 @@ export default function Navbar() {
           <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.526 5.845L.057 23.5l5.808-1.524A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.002-1.37l-.36-.214-3.724.977.994-3.629-.235-.374A9.818 9.818 0 012.182 12C2.182 6.566 6.566 2.182 12 2.182S21.818 6.566 21.818 12 17.434 21.818 12 21.818z" />
         </svg>
       </a>
+      {/* Back to Top Button */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className={`fixed bottom-6 right-20 sm:bottom-8 sm:right-24 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#0a0a0a] border border-white/10 flex items-center justify-center shadow-2xl hover:scale-110 hover:border-accent transition-all duration-300 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
+        title="Voltar ao Topo"
+        aria-label="Voltar ao Topo"
+      >
+        <ArrowUp className="w-5 h-5 sm:w-6 sm:h-6 text-white hover:text-accent transition-colors" />
+      </button>
     </>
   );
 }

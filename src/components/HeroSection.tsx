@@ -90,18 +90,26 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.8 }}
           className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5 mb-6 w-full sm:w-auto px-4 sm:px-0"
         >
-          <Link
+          <a
             href="#briefing"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('briefing')?.scrollIntoView({ behavior: 'smooth' });
+            }}
             className="w-full sm:w-auto group relative inline-flex items-center justify-center px-8 sm:px-9 py-3 sm:py-3.5 bg-accent text-primary font-bold uppercase tracking-[0.2em] text-xs sm:text-sm overflow-hidden shadow-lg text-center"
           >
             <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
               Reservar Evento
             </span>
             <div className="absolute inset-0 h-full w-0 bg-white transition-all duration-500 ease-out group-hover:w-full z-0" />
-          </Link>
+          </a>
 
-          <Link
+          <a
             href="#showreel"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('showreel')?.scrollIntoView({ behavior: 'smooth' });
+            }}
             className="w-full sm:w-auto group flex items-center justify-center gap-2.5 text-secondary hover:text-accent transition-colors py-2 px-4"
           >
             <div className="flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-secondary/30 group-hover:border-accent transition-colors group-hover:bg-accent/10 flex-shrink-0">
@@ -110,7 +118,7 @@ export default function HeroSection() {
             <span className="font-semibold uppercase tracking-[0.2em] text-xs sm:text-sm">
               Ver Showreel
             </span>
-          </Link>
+          </a>
         </motion.div>
 
         {/* Scroll indicator */}
@@ -120,7 +128,14 @@ export default function HeroSection() {
           transition={{ delay: 1.1 }}
           className="flex flex-col items-center gap-1.5"
         >
-          <Link href="#sobre" className="flex flex-col items-center gap-1.5 group">
+          <a 
+            href="#sobre" 
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="flex flex-col items-center gap-1.5 group"
+          >
             <span className="text-secondary/40 group-hover:text-accent uppercase tracking-[0.2em] text-[9px] sm:text-[10px] transition-colors">
               Deslizar
             </span>
@@ -129,7 +144,7 @@ export default function HeroSection() {
               transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
               className="w-px h-6 sm:h-8 bg-gradient-to-b from-accent/70 to-transparent"
             />
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>
