@@ -198,7 +198,7 @@ export default function Navbar() {
       {/* Back to Top Button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className={`fixed bottom-6 right-20 sm:bottom-8 sm:right-24 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#0a0a0a] border border-white/10 flex items-center justify-center shadow-2xl hover:scale-110 hover:border-accent transition-all duration-300 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
+        className={`fixed bottom-6 left-6 sm:bottom-8 sm:left-8 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#0a0a0a] border border-white/10 flex items-center justify-center shadow-2xl hover:scale-110 hover:border-accent transition-all duration-300 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
         title="Voltar ao Topo"
         aria-label="Voltar ao Topo"
       >
